@@ -1,0 +1,11 @@
+version: "3.5"
+services:
+
+  vkbot:
+    build: ./vkbot
+    restart: always
+    env_file:
+      - vkbot/.env
+    command: gunicorn --bind 0.0.0.0:5000 app:app
+    ports:
+      - "127.0.0.1:5000:5000"
