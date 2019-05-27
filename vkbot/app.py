@@ -26,7 +26,7 @@ bot = telegram.Bot(token=TELEGRAM_BOT_TOKEN)
 
 
 def build_url(domain, url):
-    return 'https://{0}/telegram_bot_1{1}'.format(domain, url)
+    return 'https://{0}/{1}'.format(domain, url)
 
 
 def get_vk_user_info(vk_id, access_token):
