@@ -9,7 +9,6 @@ RUN apk upgrade
 RUN apk --no-cache add \
     gcc \
     libffi-dev \
-    openssl-dev \
     python3 \
     python3-dev \
     postgresql-client \
